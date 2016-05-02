@@ -1,4 +1,4 @@
 
 
 {{#link-to 'unicorn.profile' model.id class="profileLink"}}{{model.name}}{{/link-to}}
-{{input type="checkbox" name="unicorn" checked=unicorn.isHome action='unicornIsHome'}}
+<span>{{input type="checkbox" name="unicorn" checked=unicorn.isHome action='unicornIsHome'}} &nbsp;{{model.location}}</span>
