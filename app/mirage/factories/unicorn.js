@@ -14,8 +14,8 @@ export default Factory.extend({
   name() {
     return faker.name.firstName();
   },
-  fullName() {
-    return faker.name.firstName() + " "+ faker.name.lastName();
+  lastName() {
+    return faker.name.lastName();
   },
   location() {
     return faker.address.city();
