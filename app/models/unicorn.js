@@ -7,6 +7,7 @@ const {
 
 export default Model.extend({
   name: attr("string"),
+  fullName: attr("string"),
   location: attr("string"),
   isHome: attr("boolean", {defaultValue: false})
 });

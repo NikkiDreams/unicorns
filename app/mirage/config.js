@@ -3,7 +3,7 @@ export default function() {
   this.namespace = '/api';
 
   this.get('/unicorns');
-  this.get('/unicorns/:id');
+  this.get('/unicorn/:id');
 
   // These comments are here to help you get started. Feel free to delete them.
 
