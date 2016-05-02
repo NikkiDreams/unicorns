@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('unicorn', function() {
-    this.route('profile', {path: 'unicorn/:id'});
+    this.route('profile', {path: 'profile/:id'});
   });
 });
 

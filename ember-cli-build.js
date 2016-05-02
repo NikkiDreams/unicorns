@@ -20,5 +20,20 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  app.import('bower_components/bootstrap/dist/js/bootstrap.js', {
+    type: 'vendor',
+    prepend: false
+  });
+
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css', {
+    type: 'vendor',
+    prepend: true
+  });
+
+  app.import('bower_components/bootstrap/dist/css/bootstrap-theme.css', {
+    type: 'vendor',
+    prepend: true
+  });
+
   return app.toTree();
 };

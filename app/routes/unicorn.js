@@ -2,25 +2,19 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   isHome: null,
-  model(params){
+  model(){
 
-    Ember.Logger.debug('message', "got it");
-    return [{
-      id: 1,
-      name: 'booboo'
-    },
-    {
-      id: 2,
-      name: 'Pinky'
-    },
-    {
-      id: 3,
-      name: 'Bob'
-    },
-    {
-      id: 4,
-      name: 'Grumpy'
-    }]
+    return Ember.$.getJSON('/api/unicorns').then(function(data) {
+     return data;
+   });
+  },
+
+  setupController: function(controller, model) {
+    // Call _super for default behavior
+    console.log("Unicorn Model",model);
+    this._super(controller, model);
+    controller.set('model',model.unicorns);
+
   },
 
   isHomeChecked(id){

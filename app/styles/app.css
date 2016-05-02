@@ -1,0 +1,12 @@
+a.profileLink{
+  display: inline-block;
+  width: 120px;
+}
+.unicorn > .name{
+  width: 120px;
+  font-weight: bold;
+}
+
+.unicorn > .check{
+  margin:4px;
+}

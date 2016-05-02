@@ -1,5 +1,10 @@
+<div class="container">
+  <h2>Unicorns</h2>
+  <div class="row col-md-12">
+    {{#each model as |unicorn index|}}
+      {{unicorn-fields model=unicorn}}
+    {{/each}}
+  </div>
+</div>
 
-<h2>Unicorns</h2>
-  {{#each model as |unicorn index|}}
-    {{unicorn-fields model=unicorn}}
-  {{/each}}
+{{outlet}}

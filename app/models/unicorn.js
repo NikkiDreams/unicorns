@@ -2,9 +2,7 @@ import DS from 'ember-data';
 
 const {
   Model,
-  attr,
-  hasMany,
-  belongsTo
+  attr
 } = DS;
 
 export default Model.extend({
